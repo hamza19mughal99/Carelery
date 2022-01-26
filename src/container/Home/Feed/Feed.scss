@@ -1,0 +1,112 @@
+@import "../../../color";
+
+.create_post {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  img {
+    width: 80px;
+  }
+
+  .create_post_form {
+    position: relative;
+    width: 100%;
+    padding-left: 30px;
+    input {
+      float: left;
+      width: 100%;
+      padding: 0 140px 0 30px;
+      box-shadow: 3px 6px 12px 3px rgba(0,0,0,0.06);
+      -webkit-box-shadow: 3px 6px 12px 3px rgba(0,0,0,0.06);
+      -moz-box-shadow: 3px 6px 12px 3px rgba(0,0,0,0.06);
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      border-color: #EBF0F1;
+      background: #F6FAFB;
+      height: 50px;
+    }
+    input:focus {
+      border-color: #EBF0F1;
+      box-shadow: 3px 6px 12px 3px rgba(0,0,0,0.10);
+      -webkit-box-shadow: 3px 6px 12px 3px rgba(0,0,0,0.10);
+      -moz-box-shadow: 3px 6px 12px 3px rgba(0,0,0,0.10);
+    }
+    input::placeholder {
+      font-size: 12px;
+    }
+
+    button {
+      width: 20%;
+      position: absolute;
+      right: 0;
+      height: 50px;
+      border-bottom-right-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      background: $button;;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}
+
+.activity_feed {
+  margin-top: 50px;
+  h4 {
+    color: $primary;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .activity_feed_post {
+    .activity_feed_user {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      img {
+        width: 80px;
+        cursor: pointer;
+      }
+      .activity_feed_user_info {
+        cursor: pointer;
+      }
+      div {
+        margin-left: 25px;
+        h5 {
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0;
+          padding:0;
+        }
+        p {
+          text-align: start;
+          font-size: 12px;
+          svg {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .post_stats{
+      svg{
+        :hover{
+          color: $hover;
+          cursor: pointer;
+        }
+      }
+
+    }
+
+    .activity_feed_description {
+      p {
+        margin-top: 25px;
+      }
+    }
+  }
+
+
+
+}
