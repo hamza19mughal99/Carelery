@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Calorie from "../../assets/img/calorie.png";
-import {Container, Row, Col, Button, Modal, Form, Dropdown} from "react-bootstrap";
+import {Container, Row, Col, Button, Modal, Form} from "react-bootstrap";
 // import DateTimePicker from '@mui/lab/DateTimePicker';
 // import LocalizationProvider from '@mui/lab/LocalizationProvider';
 // import AdapterDateFns from '@mui/lab/AdapterDateFns';
@@ -11,7 +11,7 @@ import "./CalorieTracker.scss";
 
 const CalorieTracker = () => {
     const [modalShow, setModalShow] = useState(false);
-    const [value, setValue] = React.useState(new Date('2018-01-01T00:00:00.000Z'));
+    // const [value, setValue] = React.useState(new Date('2018-01-01T00:00:00.000Z'));
 
 
     const modalOpenHandler = () => {
